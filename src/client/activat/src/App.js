@@ -18,8 +18,6 @@ class App extends Component {
 
     return (
       <div>
-
-
       <Router>
             <Switch>
               <Route path="/application" component={Category} />
@@ -33,15 +31,3 @@ class App extends Component {
 }
 
 export default App;
-
-/*
-// <Route path="/about" component={About} />
-// <Route
-//   path="/contact"
-//   render={() => <h1>Contact Us</h1>} />
-// <Route path="/blog" children={({match}) => (
-//   <li className={match ? 'active' : ''}>
-//     <Link to="/blog">Blog</Link>
-//   </li>)} />
-
-*/

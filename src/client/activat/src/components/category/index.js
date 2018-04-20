@@ -6,11 +6,15 @@ const { Meta } = Card;
 
 class CategoryElement extends Component{
 
+  onSelect(e){
+    console.table(this.props);
+  }
+
   render(){
     const { alt , src , title , description } = this.props
-    console.log(this.props);
+
     return(
-      <div className="_catergory">
+      <div onClick={this.onSelect.bind(this)} className="_catergory">
         <Card
            hoverable
            style={{ width: 400  }}
