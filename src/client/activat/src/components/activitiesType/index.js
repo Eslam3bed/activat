@@ -4,6 +4,7 @@ import categoriesList from '../sampleData.json'
 import './activitiesType.css'
 class Category extends Component{
 
+
   render(){
 
 
