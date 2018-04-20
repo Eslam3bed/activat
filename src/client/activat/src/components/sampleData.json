@@ -1,0 +1,26 @@
+[
+  {
+    "title" :"SAFARI" ,
+    "src":"http://www.ungsafari.com/assets/img/full-day-jungle-safari/001.jpg" ,
+    "alt": "example",
+    "description" : "www.instagram.com"
+  },
+  {
+    "title" :"SPORTS" ,
+    "src":"http://www.adwonline.ae/wp-content/uploads/2017/01/cover_story_011.jpg" ,
+    "alt": "example",
+    "description" : ""
+  },
+  {
+    "title" :"Europe Street beat" ,
+    "src":"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" ,
+    "alt": "example",
+    "description" : "www.instagram.com"
+  },
+  {
+    "title" :"Europe Street beat" ,
+    "src":"https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/tours/safari-what-to-take.jpg" ,
+    "alt": "example",
+    "description" : "www.instagram.com"
+  }
+]
