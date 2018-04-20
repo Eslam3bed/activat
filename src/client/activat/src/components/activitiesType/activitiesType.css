@@ -1,6 +1,28 @@
 .category{
-  display: flex;
+  /* display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
-
+  width: 70%; */
+}
+.category-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #b9caca4d;
+  font-size: large;
+  font-family: sans-serif;
+  padding: 5px;
+  }
+.ant-card-grid{
+  cursor: pointer;
+  padding: 10px !important;
+  transition: all 300ms ease-in-out;
+}
+.ant-card-wider-padding {
+  padding: 10px !important;
+}
+.ant-card-body{
+  height: 65vh;
+  overflow: auto;
 }

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import NSteps from './components/steps/'
-import  ActiveStep  from './components/content/'
+// import  ActiveStep  from './components/content/'
 import Category from './components/activitiesType/'
 import Home from './components/home'
 import {
   BrowserRouter as Router,
-  Link,
   Route,
   Switch,
 } from 'react-router-dom';
@@ -20,7 +19,12 @@ class App extends Component {
       <div>
       <Router>
             <Switch>
-              <Route path="/application" component={Category} />
+              <Route path="/application" render={()=>
+                <div>
+                <NSteps/>
+                <Category/>
+                </div>
+              } />
               <Route path="/" component={Home} />
               <Route render={() => <h1>Page not found</h1>} />
             </Switch>
@@ -29,5 +33,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
