@@ -1,0 +1,123 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #6c6f73;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #333;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.nav {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  z-index: 1000;
+  position: absolute;
+  outline: none;
+  opacity: .6;
+
+}
+a {
+    text-decoration: none;
+    color: #34495e;
+}
+
+
+
+.logo {
+	margin: 0;
+  width: 180px;
+  height: 60px;
+  background: url("activatlogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo ,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+@media only screen and  (min-width: 769px) {
+	.nav {
+    display: flex;
+		flex-direction: column;
+    align-items: flex-start;
+		/*align-items: center;*/
+  }
+    	.main-nav{
+    display: flex;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+
+
+@media (min-width: 550px) {
+	.nav {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+  .main-nav {
+		display: flex;
+	}
+
+}
+
+#stage{
+  background: url("jason-blackeye-221058-unsplash.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 660px;
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+  display: flex;
+  align-items: center;
+
+}
+
+#stage-caption{
+  font-size: 1.4rem;
+  font-weight: 400;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#stage-caption h1{
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul{
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+}
