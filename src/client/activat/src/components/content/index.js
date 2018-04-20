@@ -6,7 +6,6 @@ class ActiveStep extends Component{
 
   render(){
       const choice = (selected)=>{
-        console.log("-----------------------------");
          switch (selected) {
             case 'activities':
               return <div > FUCK</div>

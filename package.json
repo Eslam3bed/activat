@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server/index.js",
     "dev:watch": "nodemon src/server/index.js",
-    "postinstall": "cd src/client/activat && npm build "
+    "postinstall": "cd src/client/activat && npm run build "
   },
   "repository": {
     "type": "git",
