@@ -3,6 +3,12 @@
   justify-content:space-around;
   flex-wrap: wrap;
   width: 70%; */
+  font-size: large;
+  font-weight: bold;
+}
+.ant-card-head-title{
+    font-weight: 650 !important;
+    font-size: 20px !important;
 }
 .category-card{
   display: flex;
