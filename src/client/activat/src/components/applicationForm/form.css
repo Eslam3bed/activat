@@ -1,0 +1,9 @@
+.fields-container{
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+}
+.ant-row{
+  margin: 10px 0px !important;
+}

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import { connect } from 'react-redux';
 import NSteps from './components/steps/'
 // import  ActiveStep  from './components/content/'
 import Category from './components/activitiesType/'
+import Application from './components/applicationForm'
 import Home from './components/home'
 import {
   BrowserRouter as Router,
@@ -22,7 +23,7 @@ class App extends Component {
               <Route path="/application" render={()=>
                 <div>
                 <NSteps/>
-                <Category/>
+                {this.props.formScreen ? <Application/>:<Category/>}
                 </div>
               } />
               <Route path="/" component={Home} />
@@ -35,4 +36,10 @@ class App extends Component {
 }
 
 
-export default App;
+
+const mapStateToProps = state =>({
+  formScreen:state.categories.formScreen,
+  stage:state.categories.stage
+})
+
+export default  connect(mapStateToProps)(App);

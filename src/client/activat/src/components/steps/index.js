@@ -12,17 +12,21 @@ class NSteps extends Component{
   render(){
 
     const customDot = (dot, { status, index }) => (
-      <Popover content={<span>step {index} status: {status}</span>}>
+      <Popover content={<span>You Are in the {index} stage</span>}>
         {dot}
       </Popover>);
 
     return(
       <div className="_steps">
         <Steps current={this.props.stage} progressDot={customDot}>
-          <Step title="Pik An Activity" description="What Kind of Journy Do you like" />
-          <Step title="In Progress" description="You can hover on the dot." />
-          <Step title="Waiting" description="You can hover on the dot." />
-          <Step title="Waiting" description="You can hover on the dot." />
+          <Step title="Type of activites" />
+          <Step title="Sub activities" />
+          <Step title="Tour information"/>
+          <Step title="Food" />
+          <Step title="Pick An Activity" />
+          <Step title="Tour Guide"/>
+          <Step title="Budget" />
+          <Step title="Submit" />
         </Steps>
       </div>
     )
