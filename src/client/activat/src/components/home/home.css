@@ -39,7 +39,7 @@ a {
   margin: 0 ;
   padding: 0px;
   width: 100%;
-  background: #333;
+  background: #707070;
 }
 
 .main-nav img {
@@ -74,7 +74,7 @@ a {
 }
 
 #stage{
-  background: linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)), url("./background.jpg") center center no-repeat;
+  background: linear-gradient(to bottom right, rgba(0, 28, 44, 0.5), rgba(63, 11, 1, 0.5)), url("./background1.jpg") center center no-repeat;
   background-size: cover;
   color: white;
   height: 100vh;
