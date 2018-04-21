@@ -159,7 +159,7 @@ export const TourGuideSelections = (props)=>{
             <Row>
             <Col span={9} offset={6}>
             <p style={{ marginBottom: '20px' }}>
-              Do You Like to include the Food in the Tour ?<br/>
+              Do You Like to include Tour guide ?<br/>
              <Checkbox
                onClick={()=>state.checked ?state.checked=false : state.checked=true  }
                checked={state.checked }>
@@ -173,6 +173,19 @@ export const TourGuideSelections = (props)=>{
            {!state.checked ? 'Check' : 'Uncheck'}
          </Button>
        </p>
+       <p style={{ marginBottom: '20px' }}>
+              Tour guide language?<br/>
+             <Checkbox
+               onClick={()=>state.checked ?state.checked=false : state.checked=true  }
+               checked={state.checked }>
+               Arabic
+             </Checkbox>
+             <Checkbox
+               onClick={()=>state.checked ?state.checked=false : state.checked=true  }
+               >
+               English
+             </Checkbox>
+             </p>
        </Col>
       </Row>
     </div>
@@ -180,7 +193,38 @@ export const TourGuideSelections = (props)=>{
   }
 
 export const BudgetSelections = (props)=>{
-
+  const state = { checked : true }
+  const label = `${state.checked ? 'include' : 'not include'}`;
+  const plainOptions = ['ess than 100$', 'less than 200$','less than 400$'];
+  const defaultCheckedList = ['Arabic speaker'];
+  return(
+        <div>
+            <Row>
+            <Col span={9} offset={6}>
+            <p style={{ marginBottom: '20px' }}>
+              Do You Like to include Tour guide ?<br/>
+             <Checkbox
+               onClick={()=>state.checked ?state.checked=false : state.checked=true  }
+               checked={state.checked }>
+               ess than 100$
+             </Checkbox>
+             <Checkbox
+               onClick={()=>state.checked ?state.checked=false : state.checked=true  }
+               >
+               less than 200$
+             </Checkbox>
+             <Checkbox
+               onClick={()=>state.checked ?state.checked=false : state.checked=true  }
+               >
+               less than 400$
+             </Checkbox>
+             </p>
+          
+   
+       </Col>
+      </Row>
+    </div>
+  )
 }
 
 export const SignUp = (props)=>{

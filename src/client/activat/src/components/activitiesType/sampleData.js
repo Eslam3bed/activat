@@ -2,74 +2,53 @@ export const categories = [
   {
     "id":0,
     "title" :"SAFARI" ,
-    "src":"http://www.ungsafari.com/assets/img/full-day-jungle-safari/001.jpg" ,
+    "src":"https://cdn.getyourguide.com/niwziy2l9cvz/hExNxYl8Tmkgsy4Ss0kmE/6b2fa9939ab566fe8e46c800896e4300/Abu-Dhabi-Desert-Ride_a_camel-1500x800.JPG" ,
     "alt": "example",
-    "description" : "www.instagram.com"
+    "description" : ""
   },
   {
     "id":1,
-    "title" :"SPORTS" ,
-    "src":"http://www.adwonline.ae/wp-content/uploads/2017/01/cover_story_011.jpg" ,
+    "title" :"Burj Khalifa trips" ,
+    "src":"https://i.pinimg.com/originals/59/03/58/590358c06c4150f9b18ce0cf5c8d1092.jpg" ,
     "alt": "example",
     "description" : ""
   },
   {
     "id":2,
-    "title" :"Europe Street beat" ,
-    "src":"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" ,
+    "title" :"Dhow Cruise" ,
+    "src":"https://images.thrillophilia.com/image/upload/s--BaHznult--/c_fill,f_auto,fl_strip_profile,h_800,q_auto,w_1300/v1/images/photos/000/053/200/original/1510824107_Dhow-Cruise-Dinner-Marina.jpg.jpg" ,
     "alt": "example",
-    "description" : "www.instagram.com"
+    "description" : ""
   },
   {
     "id":3,
-    "title" :"Europe Street beat" ,
-    "src":"https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/tours/safari-what-to-take.jpg" ,
+    "title" :"Yacht" ,
+    "src":"http://www.marasinews.com/sites/default/files/9a95ae41eb2b5835_org.jpg" ,
     "alt": "example",
-    "description" : "www.instagram.com"
+    "description" : ""
   }
 ]
 
 export const subCategories = [
   {
     "categoryId":1,
-    "title" :"SPORTS" ,
-    "src":"https://www.rd.com/wp-content/uploads/2017/12/00_Top-Travel-Trends-for-2018_209155915_06photo_FT.jpg" ,
+    "title" :"Morning Desert safari" ,
+    "src":"http://morningdesertsafaridubai.mtdubai.com/uploads/images/2l.jpg" ,
     "alt": "example",
     "description" : ""
   },
   {
-    "categoryId":2,
-    "title" :"Europe Street beat" ,
-    "src":"http://www.caribpress.com/wp-content/uploads/2017/03/Travel-site.jpg" ,
+    "categoryId":1,
+    "title" :"Evening Desert safari" ,
+    "src":"https://i.pinimg.com/originals/53/fe/f4/53fef4bf64313be53c0f352687676666.jpg" ,
     "alt": "example",
     "description" : "www.instagram.com"
   },
   {
     "categoryId":1,
-    "title" :"SPORTS" ,
-    "src":"https://www.rd.com/wp-content/uploads/2017/12/00_Top-Travel-Trends-for-2018_209155915_06photo_FT.jpg" ,
+    "title" :"Overnight Desert safari" ,
+    "src":"http://booktoursindubai.com/wp-content/uploads/2017/08/97626_18_01_17_overnight-safari-1.jpg" ,
     "alt": "example",
     "description" : ""
-  },
-  {
-    "categoryId":4,
-    "title" :"Europe Street beat" ,
-    "src":"http://www.caribpress.com/wp-content/uploads/2017/03/Travel-site.jpg" ,
-    "alt": "example",
-    "description" : "www.instagram.com"
-  },
-  {
-    "categoryId":3,
-    "title" :"SPORTS" ,
-    "src":"https://www.rd.com/wp-content/uploads/2017/12/00_Top-Travel-Trends-for-2018_209155915_06photo_FT.jpg" ,
-    "alt": "example",
-    "description" : ""
-  },
-  {
-    "categoryId":2,
-    "title" :"Europe Street beat" ,
-    "src":"http://www.caribpress.com/wp-content/uploads/2017/03/Travel-site.jpg" ,
-    "alt": "example",
-    "description" : "www.instagram.com"
   }
 ]

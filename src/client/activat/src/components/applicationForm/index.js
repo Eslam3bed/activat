@@ -18,7 +18,7 @@ const CurrentSection = (props)=>{
     case 3:
       return <TourGuideSelections/>
     case 4:
-      return <FoodSelections/>
+      return <BudgetSelections/>
     default:
       return <FoodSelections/>
 
