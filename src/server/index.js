@@ -13,5 +13,7 @@ app.get('/api', (req ,res)=>{
 
 app.use(express.static(path.join(__dirname,'..','client','activat','build')))
 
+app.use('/agent' , express.static(path.join(__dirname,'..','client','activat','pureHtml','public')))
+
 // app.use('/',(req,res)=>res.end("HOME PAGE"));
 app.listen(PORT , ()=>console.log(`SERVER RUNNING ON PORT ${PORT}`));
