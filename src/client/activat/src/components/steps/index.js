@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Steps, Popover } from 'antd';
+import { connect } from 'react-redux';
+
 import './steps.css'
 const Step = Steps.Step;
 
@@ -16,7 +18,7 @@ class NSteps extends Component{
 
     return(
       <div className="_steps">
-        <Steps current={2} progressDot={customDot}>
+        <Steps current={this.props.stage} progressDot={customDot}>
           <Step title="Pik An Activity" description="What Kind of Journy Do you like" />
           <Step title="In Progress" description="You can hover on the dot." />
           <Step title="Waiting" description="You can hover on the dot." />
@@ -27,4 +29,8 @@ class NSteps extends Component{
   }
 }
 
-export default NSteps;
+const mapStateToProps = state =>({
+  stage: state.categories.stage
+})
+
+export default connect(mapStateToProps)(NSteps);

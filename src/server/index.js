@@ -5,10 +5,9 @@ const path = require('path');
 
 
 app.get('/api', (req ,res)=>{
-  console.log("Asdasdasdas");
   res.json({
     status: true,
-    msg:"WTF!!!"
+    msg:"GSG!!!"
   })
 })
 
