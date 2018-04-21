@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Request applications</title>
-  <link href="public/style.css" rel="stylesheet" type="text/css" />
+  <link href="./style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
@@ -75,12 +75,13 @@
 
                               <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" data-dropdown-toggle="click">
                                 <a href="#" class="m-nav__link m-dropdown__toggle">
-													<!-- <img class="m-nav" src="public/activatlogo.png" height="55px" alt=""/> -->
+													<!-- <img class="m-nav" src="./activatlogo.png" height="55px" alt=""/> -->
 												</span>
                                                 <span class="m-topbar__username">
                                                   <span class="m-topbar__userpic">
-                                                  Viator
+                                                Viator
                                                 </span>
+                                              </span>
                 </div>
             </div>
         </div>
@@ -91,12 +92,12 @@
            <div class="m-content">
 
                    <div>
-                       <table class="table m-table table-striped m-table--head-bg-brand booking">
+                       <table class="table m-table table-striped m-table--head-bg-brand ">
                            <thead class="thead-inverse">
                            <tr>
                                <th width=""></th>
                                <th width=""></th>
-                               <th width="" style="font-size:40px">Responses Applications</th>
+                               <th width="" style="font-size:40px">Request Applications</th>
                                <th width=""></th>
                                <th width="">
                                </th>
@@ -113,9 +114,10 @@
                                <td></td>
                                <td>
 
+                                 <a class="btn btn-success accept" id="success-accept" data-toggle="modal" data-target="#accept">View</a>
                                 </td>
                                 <td>
-                                  <a class="btn btn-pendding" data-toggle="modal" data-target="#reject">Pending</a>
+                                  <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                 </td>
                                 </tr>
                                 <tr>
@@ -126,11 +128,11 @@
                                   </td>
                                   <td></td>
                                   <td>
-
+                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#accept">View</a>
 
                                   </td>
                                   <td>
-                                    <a class="btn btn-success" data-toggle="modal" data-target="#reject">Confirmed</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -142,9 +144,10 @@
                                   <td></td>
                                   <td>
 
+                                    <a class="btn btn-success accept" id="success-accept" data-toggle="modal" data-target="#accept">View</a>
                                   </td>
                                   <td>
-                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#reject">Confirmed</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -155,11 +158,11 @@
                                   </td>
                                   <td></td>
                                   <td>
-
+                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#accept">View</a>
 
                                   </td>
                                   <td>
-                                    <a class="btn btn-pendding" data-toggle="modal" data-target="#reject">Pending</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -171,10 +174,10 @@
                                   <td></td>
                                   <td>
 
-
+                                    <a class="btn btn-success accept" id="success-accept" data-toggle="modal" data-target="#accept">View</a>
                                   </td>
                                   <td>
-                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#reject">Confirmed</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -185,11 +188,11 @@
                                   </td>
                                   <td></td>
                                   <td>
-
+                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#accept">View</a>
 
                                   </td>
                                   <td>
-                                    <a class="btn btn-pendding" data-toggle="modal" data-target="#reject">Pending</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -201,9 +204,10 @@
                                   <td></td>
                                   <td>
 
+                                    <a class="btn btn-success accept" id="success-accept" data-toggle="modal" data-target="#accept">View</a>
                                   </td>
                                   <td>
-                                    <a class="btn btn-pendding" data-toggle="modal" data-target="#reject">Pending</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -214,11 +218,11 @@
                                   </td>
                                   <td></td>
                                   <td>
-
+                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#accept">View</a>
 
                                   </td>
                                   <td>
-                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#reject">Confirmed</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -230,37 +234,10 @@
                                   <td></td>
                                   <td>
 
+                                    <a class="btn btn-success accept" id="success-accept" data-toggle="modal" data-target="#accept">View</a>
                                   </td>
                                   <td>
-                                    <a class="btn btn-pendding" data-toggle="modal" data-target="#reject">pending</a>
-                                  </td>
-                                </tr>
-                                <!-- <tr>
-                                  <td>Yacht</td>
-                                  <td>Mai Ahmed</td>
-                                  <td>
-                                    <div>11july 2018, 11:00am-2:00pm</div>
-                                  </td>
-                                  <td></td>
-                                  <td>
-
-                                  </td>
-                                  <td>
-                                  <a class="btn btn-pendding" data-toggle="modal" data-target="#reject">Pending</a>
-                                </td>
-                                </tr> -->
-                                <tr>
-                                  <td>Desert Safari/Monring Safari</td>
-                                  <td>Ali Hassan</td>
-                                  <td>
-                                    <div>5May 2018, 8:00am-3:00pm</div>
-                                  </td>
-                                  <td></td>
-                                  <td>
-
-                                  </td>
-                                  <td>
-                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#reject">Confirmed</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -271,11 +248,11 @@
                                   </td>
                                   <td></td>
                                   <td>
-
+                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#accept">View</a>
 
                                   </td>
                                   <td>
-                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#reject">Confirmed</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -286,9 +263,11 @@
                                   </td>
                                   <td></td>
                                   <td>
+
+                                    <a class="btn btn-success accept" id="success-accept" data-toggle="modal" data-target="#accept">View</a>
                                   </td>
                                   <td>
-                                    <a class="btn btn-pendding" data-toggle="modal" data-target="#reject">Pending</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -297,11 +276,43 @@
                                   <td>
                                     <div>11july 2018, 11:00am-2:00pm</div>
                                   </td>
-                                  <td> </td>
+                                  <td></td>
                                   <td>
+                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#accept">View</a>
+
                                   </td>
                                   <td>
-                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#reject">Confirmed</a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Desert Safari/Monring Safari</td>
+                                  <td>Ali Hassan</td>
+                                  <td>
+                                    <div>5May 2018, 8:00am-3:00pm</div>
+                                  </td>
+                                  <td></td>
+                                  <td>
+
+                                    <a class="btn btn-success accept" id="success-accept" data-toggle="modal" data-target="#accept">View</a>
+                                  </td>
+                                  <td>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Yacht</td>
+                                  <td>Mai Ahmed</td>
+                                  <td>
+                                    <div>11july 2018, 11:00am-2:00pm</div>
+                                  </td>
+                                  <td></td>
+                                  <td>
+                                    <a class="btn btn-success accept" data-toggle="modal" data-target="#accept">View</a>
+
+                                  </td>
+                                  <td>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#reject">Reject</a>
                                   </td>
                                 </tr>
                                 </tbody>
