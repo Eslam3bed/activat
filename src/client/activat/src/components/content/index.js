@@ -8,7 +8,7 @@ class ActiveStep extends Component{
       const choice = (selected)=>{
          switch (selected) {
             case 'activities':
-              return <div > FUCK</div>
+              return <div > Hellow</div>
             default:
               return ActivitiesType
           }

@@ -34,7 +34,17 @@ a {
     color: #34495e;
 }
 
+.main-nav{
+  display: flex;
+  margin: 0 ;
+  padding: 0px;
+  width: 100%;
+  background: #333;
+}
 
+.main-nav img {
+  border: 0px;
+}
 
 .logo {
 	margin: 0;
@@ -43,52 +53,31 @@ a {
   background: url("activatlogo.png");
   background-size: contain;
   background-repeat: no-repeat;
+  border: 0px;
 }
 
-.main-nav {
-	margin-top: 5px;
 
-}
-.logo ,
+
 .main-nav a {
-	padding: 10px 15px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+	text-align: center;
+  display: block;
+  color:#fff;
+}
+
+.logo a {
 	text-transform: uppercase;
 	text-align: center;
-	display: block;
-}
-@media only screen and  (min-width: 769px) {
-	.nav {
-    display: flex;
-		flex-direction: column;
-    align-items: flex-start;
-		/*align-items: center;*/
-  }
-    	.main-nav{
-    display: flex;
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
-	}
-	}
-
-
-
-@media (min-width: 550px) {
-	.nav {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-  .main-nav {
-		display: flex;
-	}
-
+  display: block;
+  padding: 30px 40px;
 }
 
 #stage{
-  background: url("jason-blackeye-221058-unsplash.jpg") center center no-repeat;
+  background: linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)), url("./background.jpg") center center no-repeat;
   background-size: cover;
   color: white;
-  height: 660px;
+  height: 100vh;
   z-index: 10;
   position: absolute;
   top: 0px;
@@ -111,6 +100,7 @@ a {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 ul{
@@ -121,3 +111,35 @@ ul{
   display: flex;
   justify-content: center;
 }
+
+.btn {
+  background: #333;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+@media (max-width: 550px) {
+	.nav {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+  .main-nav {
+		display: flex;
+	}
+
+}
+
+@media only screen and  (max-width: 769px) {
+	.nav {
+    display: flex;
+		flex-direction: column;
+    align-items: flex-start;
+		/*align-items: center;*/
+  }
+    	.main-nav{
+    display: flex;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}

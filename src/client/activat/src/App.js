@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { connect } from 'react-redux';
 import NSteps from './components/steps/'
-import  ActiveStep  from './components/content/'
+// import  ActiveStep  from './components/content/'
 import Category from './components/activitiesType/'
+import Application from './components/applicationForm'
 import Home from './components/home'
 import {
   BrowserRouter as Router,
-  Link,
   Route,
   Switch,
 } from 'react-router-dom';
@@ -20,7 +20,12 @@ class App extends Component {
       <div>
       <Router>
             <Switch>
-              <Route path="/application" component={Category} />
+              <Route path="/application" render={()=>
+                <div>
+                <NSteps/>
+                {this.props.formScreen ? <Application/>:<Category/>}
+                </div>
+              } />
               <Route path="/" component={Home} />
               <Route render={() => <h1>Page not found</h1>} />
             </Switch>
@@ -30,4 +35,11 @@ class App extends Component {
   }
 }
 
-export default App;
+
+
+const mapStateToProps = state =>({
+  formScreen:state.categories.formScreen,
+  stage:state.categories.stage
+})
+
+export default  connect(mapStateToProps)(App);

@@ -12,7 +12,7 @@ render(){
       <nav>
         <div id="exCollapsingNavbar2">
           <ul className="nav main-nav">
-            <img className='logo' height="40" width="60" />
+          <img className='logo' height="40" width="60" />
             <li className="nav-item active">
             <Link to="/" className="nav-link">Home</Link>{' '}
             </li>
@@ -28,9 +28,10 @@ render(){
 
       <div id="stage">
         <div id="stage-caption">
-          <h1 className="display-3">Join to Us </h1>
-          <p>To achive your dream</p>
-          <a href="" className="btn btn-lg btn-success">Start Jernay</a>
+          <h1 className="display-3">You have a dream adventure ? 
+          well , we can make it a reality </h1>
+          <p>Start customizing your tours and activities with us</p>
+          <a href="/application" className="btn">Start Now !</a>
         </div>
       </div>
 </div>
